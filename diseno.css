@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente principal de la página */
+    background-color: #e6f0ff; /* Color de fondo azul claro */
+    margin: 0; /* Elimina margen predeterminado del navegador */
+    padding: 0; /* Elimina padding predeterminado del navegador */
+    color: #222; /* Color de texto oscuro */
+}
+
+header {
+    background-color: #004080; /* Fondo azul oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espacio interno de 20px */
+}
+
+main {
+    padding: 20px; /* Espacio interno alrededor del contenido principal */
+}
+
+.contenedor {
+    display: flex; /* Usa Flexbox para organizar elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
+    gap: 20px; /* Espacio entre los elementos hijos */
+    justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
+    margin-bottom: 20px; /* Margen inferior del contenedor */
+}
+
+section {
+    background-color: white; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    flex: 1 1 300px; /* Flex-grow, flex-shrink y tamaño base de 300px */
+    box-shadow: 0 0 10px rgba(0,0,0,0.15); /* Sombra ligera */
+    min-width: 280px; /* Ancho mínimo de la sección */
+}
+
+h2 {
+    color: #004080; /* Color azul oscuro para títulos h2 */
+    margin-top: 0; /* Elimina margen superior */
+}
+
+.formula {
+    background-color: #eef6ff; /* Fondo azul muy claro */
+    border-left: 5px solid #004080; /* Línea azul en el lado izquierdo */
+    padding: 10px; /* Espacio interno */
+    font-weight: bold; /* Texto en negrita */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+input {
+    margin: 5px 0; /* Margen vertical de 5px */
+    padding: 5px; /* Espacio interno de 5px */
+    width: 120px; /* Ancho fijo de 120px */
+}
+
+button {
+    background-color: #004080; /* Fondo azul oscuro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interno vertical y horizontal */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    margin-top: 10px; /* Margen superior */
+}
+
+button:hover {
+    background-color: #0066cc; /* Cambio de color al pasar el cursor */
+}
+
+#reflexion {
+    background-color: #eef6ff; /* Fondo azul muy claro */
+    border-left: 5px solid #004080; /* Línea lateral azul del diseño */
+    padding: 20px; /* Espacio interno */
+    flex: 1 1 300px; /* Flexibilidad para la sección */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+    min-width: 280px; /* Ancho mínimo */
+}
+
+#reflexion h2 {
+    color: #004080; /* Título en azul */
+    margin-top: 0; /* Sin margen superior */
+}
+
+#reflexion p {
+    font-size: 1rem; /* Tamaño de texto estándar */
+    line-height: 1.5; /* Mejor lectura */
+}
+
+#juego-circulo {
+    display: flex; /* Flexbox para alinear elementos */
+    flex-direction: column; /* Coloca elementos en columna */
+    align-items: center; /* Centra elementos horizontalmente */
+}
+
+#zona-juego {
+    width: 300px; /* Ancho del área de juego */
+    height: 300px; /* Alto del área de juego */
+    border: 2px solid #333; /* Borde gris oscuro */
+    margin: 20px 0; /* Margen vertical de 20px */
+    position: relative; /* Posicionamiento relativo para el círculo */
+    background-color: #f5f5f5; /* Fondo gris claro */
+}
+
+#circulo {
+    width: 50px; /* Ancho del círculo */
+    height: 50px; /* Alto del círculo */
+    border-radius: 50%; /* Hace que sea redondo */
+    background-color: red; /* Color rojo */
+    position: absolute; /* Posición absoluta dentro de #zona-juego */
+    top: 0; /* Posición superior inicial */
+    left: 0; /* Posición izquierda inicial */
+    cursor: pointer; /* Cursor de mano */
+    display: none; /* Oculto al inicio */
+}
+
+#mensaje, #puntos {
+    font-size: 1.2rem; /* Tamaño de fuente ligeramente más grande */
+    margin: 5px 0; /* Margen vertical de 5px */
+}
+
+#juego-gato {
+    display: flex; /* Flexbox para alinear elementos */
+    flex-direction: column; /* Coloca elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+}
+
+#tablero {
+    display: grid; /* Usamos Grid para el tablero */
+    grid-template-columns: repeat(3, 80px); /* 3 columnas de 80px */
+    grid-template-rows: repeat(3, 80px); /* 3 filas de 80px */
+    gap: 5px; /* Espacio entre celdas */
+    margin: 20px 0; /* Margen vertical */
+}
+
+.celda {
+    width: 80px; /* Ancho de cada celda */
+    height: 80px; /* Alto de cada celda */
+    background-color: #f5f5f5; /* Fondo gris claro */
+    display: flex; /* Flex para centrar contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    font-size: 2rem; /* Tamaño de letra grande */
+    font-weight: bold; /* Negrita */
+    cursor: pointer; /* Cursor de puntero */
+    border: 2px solid #004080; /* Borde azul oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.2s; /* Transición suave al cambiar color */
+}
+
+.celda:hover {
+    background-color: #e0f0ff; /* Cambio de color al pasar el cursor */
+}
+
+#estado {
+    font-size: 1.2rem; /* Tamaño de texto del estado */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+#reiniciar {
+    padding: 10px 20px; /* Espacio interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+}
+
+#reiniciar:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el cursor */
+}
+
+@media (max-width: 800px) { /* Estilos responsivos para pantallas menores a 800px */
+    .contenedor {
+        flex-direction: column; /* Pone los contenedores en columna */
+        align-items: center; /* Centra horizontalmente */
+    }
+
+    #tablero {
+        grid-template-columns: repeat(3, 60px); /* Columnas más pequeñas */
+        grid-template-rows: repeat(3, 60px); /* Filas más pequeñas */
+    }
+
+    .celda {
+        width: 60px; /* Ancho reducido */
+        height: 60px; /* Alto reducido */
+        font-size: 1.5rem; /* Fuente más pequeña */
+    }
+}
