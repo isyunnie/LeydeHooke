@@ -1,0 +1,171 @@
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Inicio del documento HTML, idioma español -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive en móviles -->
+    <title>Ley de Hooke</title> <!-- Título de la pestaña -->
+    <link rel="stylesheet" href="diseno.css"> <!-- Vincula el archivo CSS externo -->
+</head>
+<body>
+    <header> <!-- Cabecera de la página -->
+        <h1>Ley de Hooke</h1> <!-- Título principal visible -->
+    </header>
+
+    <main> <!-- Contenido principal de la página -->
+        <div class="contenedor"> <!-- Contenedor flex para secciones -->
+            <section id="fisica"> <!-- Sección de Física -->
+                <h2>Física</h2> <!-- Título de la sección -->
+                <p>
+                    La <b>Ley de Hooke</b> describe el comportamiento de los cuerpos elásticos cuando son sometidos a fuerzas que los deforman.
+                    Según esta ley, la deformación de un objeto elástico (como un resorte) es directamente proporcional a la fuerza aplicada,
+                    siempre que no se supere el límite elástico del material.
+                </p> <!-- Explicación general de la Ley de Hooke -->
+
+                <p class="formula">F = -k · x</p> <!-- Fórmula de la Ley de Hooke -->
+
+                <p>
+                    Donde:
+                    <ul>
+                        <li><b>F</b>: fuerza ejercida (en newtons, N)</li> <!-- Explicación de F -->
+                        <li><b>k</b>: constante elástica del resorte (N/m)</li> <!-- Explicación de k -->
+                        <li><b>x</b>: elongación o compresión (en metros, m)</li> <!-- Explicación de x -->
+                    </ul>
+                </p>
+
+                <p>
+                    La fuerza aplicada es opuesta al desplazamiento, por eso el signo negativo.
+                    Esto significa que el resorte “resiste” el cambio de forma y trata de volver a su posición original.
+                </p> <!-- Explicación del signo negativo en la fórmula -->
+            </section>
+
+            <section id="historia"> <!-- Sección de Historia -->
+                <h2>Historia</h2> <!-- Título de la sección -->
+                <p>
+                    La Ley de Hooke fue formulada por el físico inglés <b>Robert Hooke</b> (1635–1703).
+                    Hooke fue una de las mentes más brillantes del siglo XVII y trabajó junto a figuras como
+                    Isaac Newton y Robert Boyle. Fue pionero en diversas áreas: la física, la biología, la astronomía y la arquitectura.
+                </p> <!-- Historia de Robert Hooke y su relevancia -->
+
+                <p>
+                    En 1678, Hooke publicó su principio en latín: <i>“Ut tensio, sic vis”</i>, que significa “Como la extensión, así la fuerza”.
+                    Esta frase resume de manera elegante la relación proporcional entre la fuerza aplicada y la deformación del material.
+                </p> <!-- Cita original de Hooke y su traducción -->
+            </section>
+        </div>
+
+        <div class="contenedor"> <!-- Segundo contenedor para la sección en inglés -->
+            <section id="ingles"> <!-- Sección en inglés -->
+                <h2>Hooke’s Law</h2> <!-- Título en inglés -->
+                <p>
+                    <b>Hooke’s Law</b> states that the extension of a spring is directly proportional to the force applied to it,
+                    provided that the elastic limit is not exceeded.
+                </p> <!-- Explicación de la Ley de Hooke en inglés -->
+
+                <p class="formula">F = -k · x</p> <!-- Fórmula en inglés -->
+
+                <p>
+                    Where:
+                    <ul>
+                        <li><b>F</b>: force applied (in newtons, N)</li> <!-- Explicación de F en inglés -->
+                        <li><b>k</b>: spring constant (N/m)</li> <!-- Explicación de k en inglés -->
+                        <li><b>x</b>: extension or compression (in meters, m)</li> <!-- Explicación de x en inglés -->
+                    </ul>
+                </p>
+
+                <p>
+                    The negative sign indicates that the force exerted by the spring is opposite to the displacement.
+                </p> <!-- Explicación del signo negativo en inglés -->
+            </section>
+        </div>
+
+<div class="contenedor"> <!-- Contenedor flexible que agrupa secciones y aplica márgenes y espaciado -->
+    <section id="reflexion"> <!-- Sección específica para la reflexión, identificable con el id 'reflexion' -->
+        <h2>Reflexión</h2> <!-- Título de la sección, se mostrará en azul y con estilo de h2 -->
+        <p>
+            La Ley de Hooke nos recuerda que todos los materiales tienen un límite. Así como un resorte se deforma 
+            proporcionalmente a la fuerza aplicada, nuestra paciencia, resiliencia y esfuerzo también tienen límites. 
+            Conocerlos nos permite actuar con equilibrio y evitar romper lo que es valioso, ya sea un material o nuestras relaciones y bienestar.
+        </p> <!-- Párrafo explicativo o reflexivo sobre la Ley de Hooke, con texto en tamaño estándar y buena legibilidad -->
+    </section>
+</div>
+
+
+        <!-- Juego del gato -->
+        <div class="contenedor"> <!-- Contenedor del juego -->
+            <section id="juego-gato"> <!-- Sección del juego Tic-Tac-Toe -->
+                <h2>Juego del Gato</h2> <!-- Título del juego -->
+                <div id="tablero"> <!-- Tablero del juego -->
+                    <div class="celda" data-index="0"></div> <!-- Celda 0 -->
+                    <div class="celda" data-index="1"></div> <!-- Celda 1 -->
+                    <div class="celda" data-index="2"></div> <!-- Celda 2 -->
+                    <div class="celda" data-index="3"></div> <!-- Celda 3 -->
+                    <div class="celda" data-index="4"></div> <!-- Celda 4 -->
+                    <div class="celda" data-index="5"></div> <!-- Celda 5 -->
+                    <div class="celda" data-index="6"></div> <!-- Celda 6 -->
+                    <div class="celda" data-index="7"></div> <!-- Celda 7 -->
+                    <div class="celda" data-index="8"></div> <!-- Celda 8 -->
+                </div>
+                <p id="estado">Turno: X</p> <!-- Muestra el turno actual -->
+                <button id="reiniciar">Reiniciar Juego</button> <!-- Botón para reiniciar el juego -->
+            </section>
+        </div>
+    </main>
+
+    <script> <!-- Inicio del script del juego del gato -->
+        const tablero = document.getElementById('tablero'); // Selecciona el tablero
+        const celdas = document.querySelectorAll('.celda'); // Selecciona todas las celdas
+        const estado = document.getElementById('estado'); // Selecciona el elemento que muestra el estado
+        const reiniciar = document.getElementById('reiniciar'); // Selecciona el botón de reinicio
+
+        let turno = 'X'; // Turno inicial
+        let juegoActivo = true; // Controla si el juego sigue activo
+        let estadoTablero = ["", "", "", "", "", "", "", "", ""]; // Estado interno de las celdas
+
+        const combinacionesGanadoras = [ // Todas las combinaciones que generan victoria
+            [0,1,2], [3,4,5], [6,7,8], // filas
+            [0,3,6], [1,4,7], [2,5,8], // columnas
+            [0,4,8], [2,4,6] // diagonales
+        ];
+
+        function manejarClick(e){ // Función que maneja clic en una celda
+            const index = e.target.dataset.index; // Obtiene el índice de la celda
+            if(estadoTablero[index] !== "" || !juegoActivo) return; // Ignora clic si ya hay marca o juego terminado
+
+            estadoTablero[index] = turno; // Marca la celda en el estado interno
+            e.target.textContent = turno; // Muestra X u O en la celda
+
+            if(revisarGanador()){ // Verifica si alguien ganó
+                estado.textContent = `¡Jugador ${turno} gana!`;
+                juegoActivo = false;
+                return;
+            }
+
+            if(!estadoTablero.includes("")){ // Verifica empate
+                estado.textContent = "¡Empate!";
+                juegoActivo = false;
+                return;
+            }
+
+            turno = turno === 'X' ? 'O' : 'X'; // Cambia el turno
+            estado.textContent = `Turno: ${turno}`; // Actualiza el texto del turno
+        }
+
+        function revisarGanador(){ // Función que verifica si hay ganador
+            return combinacionesGanadoras.some(combinacion => {
+                const [a,b,c] = combinacion;
+                return estadoTablero[a] && estadoTablero[a] === estadoTablero[b] && estadoTablero[a] === estadoTablero[c];
+            });
+        }
+
+        celdas.forEach(celda => celda.addEventListener('click', manejarClick)); // Agrega listener a cada celda
+
+        reiniciar.addEventListener('click', () => { // Reinicia el juego
+            turno = 'X'; // Reinicia turno
+            juegoActivo = true; // Juego activo
+            estadoTablero = ["", "", "", "", "", "", "", "", ""]; // Limpia tablero
+            celdas.forEach(celda => celda.textContent = ""); // Limpia visual de celdas
+            estado.textContent = `Turno: ${turno}`; // Muestra turno inicial
+        });
+    </script>
+</body>
+</html>
